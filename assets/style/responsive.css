@@ -1,0 +1,1059 @@
+@media (max-width:1024px) {
+  header>.menu>nav>ul {
+    gap: 12px;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .icon {
+    gap: 15px;
+  }
+}
+
+@media (max-width:768px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    width: auto;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .icon {
+    width: auto;
+    order: 2;
+    gap: 12px;
+    padding: 0;
+    display: none;
+    margin: 0 auto;
+  }
+
+  .icon img {
+    width: 24px !important;
+  }
+
+  .menuicon {
+    display: flex !important;
+    order: 3;
+    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+}
+
+@media (max-width:425px) {
+  .logo h1 {
+    font-size: 15px;
+  }
+
+  .icon {
+    gap: 8px;
+  }
+
+  .icon img {
+    width: 20px !important;
+  }
+}
+
+
+
+
+/* Grocery page */
+
+
+@media (max-width: 1024px) {
+
+  .Toamto,
+  .carrot,
+  .Potato,
+  .Onion,
+  .Broccoli,
+  .Cucumber,
+  .Capsicum,
+  .Brinjal,
+  .corn,
+  .green-chilli,
+  .Garlic,
+  .Spinach {
+    width: 30%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: 450px;
+  }
+
+  .Groceries_h1 {
+    font-size: 32px;
+    top: 25%;
+  }
+
+  .Groceries_p {
+    font-size: 20px;
+    top: 36%;
+    margin: 0px 20px;
+    max-width: 350px;
+    line-height: 24px;
+    margin-top: 10px !important;
+  }
+
+  .Groceries_Button {
+    top: 48%;
+    margin: 0px 20px;
+  }
+
+  .vegetable_cards {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .Toamto,
+  .carrot,
+  .Potato,
+  .Onion,
+  .Broccoli,
+  .Cucumber,
+  .Capsicum,
+  .Brinjal,
+  .corn,
+  .green-chilli,
+  .Garlic,
+  .Spinach {
+    width: 45%;
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner {
+    height: 350px;
+  }
+
+  .Groceries_h1 {
+    font-size: 24px;
+    margin: 0px 15px;
+  }
+
+  .Groceries_p {
+    font-size: 16px;
+    margin: 0px 15px;
+  }
+
+  .Groceries_Button {
+    margin: 0px 15px;
+  }
+
+  #main_heading_vegetable>.heading_vegetable {
+    font-size: 30px;
+  }
+
+  .P_vegetable {
+    font-size: 18px;
+  }
+
+  .Toamto,
+  .carrot,
+  .Potato,
+  .Onion,
+  .Broccoli,
+  .Cucumber,
+  .Capsicum,
+  .Brinjal,
+  .corn,
+  .green-chilli,
+  .Garlic,
+  .Spinach {
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+
+/* electronic page */
+
+
+.elecronics_cards {
+  box-sizing: border-box;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+.adaptor,
+.handle,
+.gaming_headphone,
+.hair,
+.headphone,
+.lights,
+.powerbank,
+.projector,
+.ringlight,
+.speaker,
+.watch,
+.wireless_charger {
+  box-sizing: border-box;
+  width: calc(25% - 40px);
+}
+
+
+@media (max-width: 1024px) {
+
+  .adaptor,
+  .handle,
+  .gaming_headphone,
+  .hair,
+  .headphone,
+  .lights,
+  .powerbank,
+  .projector,
+  .ringlight,
+  .speaker,
+  .watch,
+  .wireless_charger {
+    width: calc(33.33% - 40px);
+  }
+
+  .adaptor {
+    margin-left: 0;
+  }
+
+  .headphone,
+  .ringlight {
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner_electronics {
+    height: 400px;
+    padding: 0 20px;
+  }
+
+  .electronics_h1 {
+    font-size: 32px;
+  }
+
+  .electronics_p {
+    font-size: 18px;
+  }
+
+  #main_heading_electronics>.heading_electronics {
+    font-size: 32px;
+  }
+
+  .P_electronics {
+    font-size: 18px;
+  }
+
+  .adaptor,
+  .handle,
+  .gaming_headphone,
+  .hair,
+  .headphone,
+  .lights,
+  .powerbank,
+  .projector,
+  .ringlight,
+  .speaker,
+  .watch,
+  .wireless_charger {
+    width: calc(50% - 30px);
+  }
+
+  .adaptor,
+  .headphone,
+  .ringlight {
+    margin-left: 0;
+  }
+
+  .adaptor-image,
+  .handle-image,
+  .gaming_headphone-image,
+  .hair-image,
+  .headphone-image,
+  .lights-image,
+  .powerbank-image,
+  .projector-image,
+  .ringlight-image,
+  .speaker-image,
+  .watch-image,
+  .wireless_charger-image {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner_electronics {
+    height: 350px;
+  }
+
+  .adaptor,
+  .handle,
+  .gaming_headphone,
+  .hair,
+  .headphone,
+  .lights,
+  .powerbank,
+  .projector,
+  .ringlight,
+  .speaker,
+  .watch,
+  .wireless_charger {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .elecronics_cards {
+    margin: 20px 10px;
+    gap: 20px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .projector-image,
+  .ringlight-image,
+  .speaker-image,
+  .watch-image,
+  .wireless_charger-image {
+    height: 220px;
+    padding: 10px;
+  }
+
+  .projector-image>img,
+  .ringlight-image>img,
+  .speaker-image>img,
+  .watch-image>img,
+  .wireless_charger-image>img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .projector>image,
+  .ringlight>image,
+  .speaker>image,
+  .watch>image,
+  .wireless_charger>image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .projector-image,
+  .ringlight-image,
+  .speaker-image,
+  .watch-image,
+  .wireless_charger-image {
+    height: 250px;
+  }
+}
+
+
+/* beauty */
+
+
+
+
+@media (max-width: 1200px) {
+
+  .Deodorant,
+  .Eyeshadow,
+  .face,
+  .Foundation,
+  .Hand,
+  .Lipstick,
+  .lotion,
+  .Makeup,
+  .Mascara,
+  .Polish,
+  .Razor,
+  .Shampoo {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner_beauty {
+    height: 500px;
+    padding: 0px 30px;
+  }
+
+  .beauty_h1 {
+    font-size: 36px;
+  }
+
+  .beauty_p {
+    font-size: 18px;
+  }
+
+  .Deodorant,
+  .Eyeshadow,
+  .face,
+  .Foundation,
+  .Hand,
+  .Lipstick,
+  .lotion,
+  .Makeup,
+  .Mascara,
+  .Polish,
+  .Razor,
+  .Shampoo {
+    width: 44%;
+  }
+
+  .beauty_cards {
+    gap: 25px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_beauty {
+    height: 400px;
+    padding: 0px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .beauty_h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .beauty_p {
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #main_heading_beauty>.heading_beauty {
+    font-size: 32px;
+  }
+
+  .P_beauty {
+    font-size: 18px;
+  }
+
+  .Deodorant,
+  .Eyeshadow,
+  .face,
+  .Foundation,
+  .Hand,
+  .Lipstick,
+  .lotion,
+  .Makeup,
+  .Mascara,
+  .Polish,
+  .Razor,
+  .Shampoo {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .Deodorant>h1,
+  .Eyeshadow>h1,
+  .face>h1,
+  .Foundation>h1,
+  .Hand>h1,
+  .Lipstick>h1,
+  .lotion>h1,
+  .Makeup>h1,
+  .Mascara>h1,
+  .Polish>h1,
+  .Razor>h1,
+  .Shampoo>h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner_beauty {
+    height: 350px;
+  }
+
+  .beauty_h1 {
+    font-size: 22px;
+  }
+
+  .Deodorant-image,
+  .Eyeshadow-image,
+  .face-image,
+  .Foundation-image,
+  .Hand-image,
+  .Lipstick-image,
+  .lotion-image,
+  .Makeup-image,
+  .Mascara-image,
+  .Polish-image,
+  .Razor-image,
+  .Shampoo-image {
+    height: 250px;
+  }
+}
+
+
+
+.Makeup-image,
+.Mascara-image,
+.Polish-image,
+.Razor-image,
+.Shampoo-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+  display: block;
+}
+
+.Makeup-image>img,
+.Mascara-image>img,
+.Polish-image>img,
+.Razor-image>img,
+.Shampoo-image>img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.Makeup,
+.Mascara,
+.Polish,
+.Razor,
+.Shampoo {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+
+
+/* Index */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.home_cards {
+  width: 100% !important;
+  margin: 30px auto !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 20px !important;
+  padding: 0 10px 30px 10px !important;
+}
+
+.viewmore {
+  width: 100% !important;
+  max-width: fit-content !important;
+  display: block !important;
+  margin: 20px auto !important;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.kivi-image,
+.avacado-image,
+.dates-image,
+.strawberry-image,
+.Blush-image,
+.Compact-image,
+.Kajal-image,
+.Lip-image,
+.Bleu-image,
+.Bloom-image,
+.adore-image,
+.Opium-image,
+.dronecamera-image,
+.rgbmouse-image,
+.speaker-image,
+.vrset-image {
+  height: 300px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 15px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.kivi-image>img,
+.avacado-image>img,
+.dates-image>img,
+.strawberry-image>img,
+.Blush-image>img,
+.Compact-image>img,
+.Kajal-image>img,
+.Lip-image>img,
+.Bleu-image>img,
+.Bloom-image>img,
+.adore-image>img,
+.Opium-image>img,
+.dronecamera-image>img,
+.rgbmouse-image>img,
+.speaker-image>img,
+.vrset-image>img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  position: static !important;
+}
+
+@media (max-width: 1024px) {
+#cart{
+  display: block;
+  width: 20px;
+  position: absolute;
+  right: 55px;
+  top: 16px;
+
+}
+
+
+aside{
+  display: block;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 0%;}
+
+
+  .kivi,
+  .avacado,
+  .dates,
+  .strawberry,
+  .Blush,
+  .Compact,
+  .Kajal,
+  .Lip,
+  .Bleu,
+  .Bloom,
+  .adore,
+  .Opium,
+  .dronecamera,
+  .rgbmouse,
+  .speaker,
+  .vrset {
+    width: 45% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner_home {
+    height: 400px !important;
+    padding: 0 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .home_h1 {
+    font-size: 28px !important;
+    text-align: center !important;
+  }
+
+  .home_p {
+    font-size: 18px !important;
+    justify-content: center !important;
+  }
+
+  #main_heading_home>.heading_home {
+    font-size: 32px !important;
+  }
+
+  .kivi,
+  .avacado,
+  .dates,
+  .strawberry,
+  .Blush,
+  .Compact,
+  .Kajal,
+  .Lip,
+  .Bleu,
+  .Bloom,
+  .adore,
+  .Opium,
+  .dronecamera,
+  .rgbmouse,
+  .speaker,
+  .vrset {
+    width: 90% !important;
+    max-width: 350px !important;
+    margin-left: 0 !important;
+  }
+
+  .kivi-image,
+  .avacado-image,
+  .dates-image,
+  .strawberry-image,
+  .Blush-image,
+  .Compact-image,
+  .Kajal-image,
+  .Lip-image,
+  .Bleu-image,
+  .Bloom-image,
+  .adore-image,
+  .Opium-image,
+  .dronecamera-image,
+  .rgbmouse-image,
+  .speaker-image,
+  .vrset-image {
+    height: 260px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .kivi,
+  .avacado,
+  .dates,
+  .strawberry,
+  .Blush,
+  .Compact,
+  .Kajal,
+  .Lip,
+  .Bleu,
+  .Bloom,
+  .adore,
+  .Opium,
+  .dronecamera,
+  .rgbmouse,
+  .speaker,
+  .vrset {
+    width: 95% !important;
+  }
+}
+
+
+
+
+/* freagrance */
+
+
+
+
+
+@media (max-width: 1024px) {
+  .banner_fragrence {
+    height: 500px !important;
+    padding: 0 20px !important;
+  }
+
+  .fragrence_h1 {
+    font-size: 36px !important;
+  }
+
+  .Armani,
+  .Carolina,
+  .Chanel,
+  .ChanelNo,
+  .Creed,
+  .Sauvage,
+  .Gucci,
+  .Peony,
+  .Million,
+  .Cherry,
+  .Ford,
+  .YSL {
+    width: 45% !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner_fragrence {
+    height: 400px !important;
+    padding: 0 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .fragrence_h1 {
+    font-size: 28px !important;
+    text-align: center !important;
+  }
+
+  .fragrence_p {
+    font-size: 18px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  #main_heading_fragrence>.heading_fragrence {
+    font-size: 32px !important;
+  }
+
+  .P_fragrence {
+    font-size: 18px !important;
+  }
+
+  .Armani,
+  .Carolina,
+  .Chanel,
+  .ChanelNo,
+  .Creed,
+  .Sauvage,
+  .Gucci,
+  .Peony,
+  .Million,
+  .Cherry,
+  .Ford,
+  .YSL {
+    width: 90% !important;
+    max-width: 360px !important;
+  }
+
+  .Armani-image,
+  .Carolina-image,
+  .Chanel-image,
+  .ChanelNo-image,
+  .Creed-image,
+  .Sauvage-image,
+  .Gucci-image,
+  .Peony-image,
+  .Million-image,
+  .Cherry-image,
+  .Ford-image,
+  .YSL-image {
+    height: 260px !important;
+  }
+
+  .Armani>h1,
+  .Carolina>h1,
+  .Chanel>h1,
+  .ChanelNo>h1,
+  .Creed>h1,
+  .Sauvage>h1,
+  .Gucci>h1,
+  .Peony>h1,
+  .Million>h1,
+  .Cherry>h1,
+  .Ford>h1,
+  .YSL>h1 {
+    font-size: 26px !important;
+  }
+
+  .fragrence_cards {
+    justify-content: center !important;
+  }
+
+  .Peony,
+  .Million,
+  .Cherry,
+  .Ford,
+  .YSL {
+    width: 90% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .Peony-image,
+  .Million-image,
+  .Cherry-image,
+  .Ford-image,
+  .YSL-image {
+    height: 250px !important;
+    overflow: hidden !important;
+  }
+
+  .Peony-image>img,
+  .Million-image>img,
+  .Cherry-image>img,
+  .Ford-image>img,
+  .YSL-image>img {
+    height: 250px !important;
+    object-fit: contain !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .Armani,
+  .Carolina,
+  .Chanel,
+  .ChanelNo,
+  .Creed,
+  .Sauvage,
+  .Gucci,
+  .Peony,
+  .Million,
+  .Cherry,
+  .Ford,
+  .YSL {
+    width: 95% !important;
+  }
+
+
+
+
+
+
+}
+
+
+
+/* cart */
+
+/* ===== RESPONSIVE CODE ONLY - For Your Cart Structure ===== */
+
+@media (max-width: 1024px) {
+  .cart {
+    padding: 0px 30px;
+    height: 500px;
+  }
+  .cart_h1 {
+    font-size: 38px;
+  }
+  .cart_p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    height: 380px;
+    padding: 0px 25px;
+    align-items: flex-start;
+    background-position: 70% center;
+  }
+  .cart_h1 {
+    font-size: 32px;
+  }
+  .cart_p {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+  .cart_Button > a > button {
+    font-size: 16px;
+    padding: 9px 18px;
+  }
+
+  /* Cart Items */
+  .my-cart-wrapper {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  #my-cart-items-box {
+    padding: 18px 20px;
+    border-radius: 16px;
+  }
+  .my-cart-item {
+    flex-direction: row;
+    gap: 12px;
+    padding: 15px 0;
+  }
+  .my-cart-item img {
+    width: 70px;
+    height: 70px;
+  }
+  .my-cart-total-heading {
+    font-size: 19px;
+  }
+  .btn-continue, .btn-checkout {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart {
+    height: 320px;
+    padding: 0px 20px;
+    background-position: 75% center;
+  }
+  .cart_h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .cart_p {
+    font-size: 14px;
+  }
+  .cart_Button {
+    margin-top: 10px;
+  }
+
+  .my-cart-item {
+    align-items: flex-start;
+  }
+  .my-cart-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .my-cart-item h3 {
+    font-size: 14px;
+  }
+  .my-cart-item p {
+    font-size: 13px;
+  }
+  .my-cart-actions {
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  @media(max-width: 900px) {
+    .footer_parent {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .footer_parent {
+      grid-template-columns: 1fr;
+    }
+
+    .footer_parent2 {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .Payment {
+      display: flex;
+      gap: 5px;
+
+    }
+  }
+}

@@ -1,0 +1,4903 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+
+}
+
+aside {
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+    overflow-y: auto;
+    border-right: gray 1px solid;
+
+}
+
+#cart {
+    width: 0%;
+}
+
+aside>h1 {
+    margin: 0px 0px;
+    padding: 25px;
+
+}
+
+aside>img {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+aside>nav>ul>li {
+    margin-top: 15px;
+
+}
+
+aside>nav>ul>li>a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+aside>nav>ul>li>a:hover {
+    transition: 0.2s;
+    color: #faa12c;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px #00000333;
+
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+}
+
+.icon {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+header>.menu>nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+header>.menu>nav>ul>li>a {
+    color: #1A1A1A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header>.menu>nav>ul>li>a:hover {
+    color: #FF9900;
+    transition: 0.2s;
+}
+
+.menuicon {
+    display: none;
+}
+
+
+/* Index page Styling */
+
+.viewmore {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 20px;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+
+.viewmore:hover {
+    transition: 0.4s;
+    background-color: #faa12c;
+
+}
+
+.banner_home {
+    width: 100%;
+    height: 650px;
+    background-image: url(../Index/banner.webp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.home_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.home_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.home_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.home_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.home_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+#main_heading_home>.heading_home {
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.P_home {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 10%;
+
+}
+
+
+.home_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+
+.kivi {
+    width: 23%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.kivi-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.kivi-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.kivi-image>img:hover {
+    transform: scale(1.1);
+}
+
+.kivi>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.kivi>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.kivi>button:hover {
+    background-color: black;
+}
+
+.kivi>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.avacado {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.avacado-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.avacado-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.avacado-image>img:hover {
+    transform: scale(1.1);
+}
+
+.avacado>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.avacado>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.avacado>button:hover {
+    background-color: black;
+}
+
+.avacado>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.dates {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.dates-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.dates-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.dates-image>img:hover {
+    transform: scale(1.1);
+}
+
+.dates>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.dates>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.dates>button:hover {
+    background-color: black;
+}
+
+.dates>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.strawberry {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.strawberry-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.strawberry-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.strawberry-image>img:hover {
+    transform: scale(1.1);
+}
+
+.strawberry>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.strawberry>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.strawberry>button:hover {
+    background-color: black;
+}
+
+.strawberry>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Blush {
+    margin-left: 10px;
+
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Blush-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Blush-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Blush-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Blush>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Blush>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Blush>button:hover {
+    background-color: black;
+}
+
+.Blush>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Compact {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Compact-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Compact-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Compact-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Compact>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Compact>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Compact>button:hover {
+    background-color: black;
+}
+
+.Compact>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.Kajal {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Kajal-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Kajal-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Kajal-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Kajal>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Kajal>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+
+.Kajal>button:hover {
+    background-color: black;
+}
+
+.Kajal>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Lip {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Lip>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Lip-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Lip-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Lip>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Lip>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Lip>button:hover {
+    background-color: black;
+}
+
+
+.Lip>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Bleu {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.Bleu>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Bleu-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Bleu-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Bleu>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Bleu>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Bleu>button:hover {
+    background-color: black;
+}
+
+.Bleu>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Bloom {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Bloom>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Bloom-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Bloom-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Bloom>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Bloom>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Bloom>button:hover {
+    background-color: black;
+}
+
+.Bloom>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.adore {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.adore>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.adore-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.adore-image>img:hover {
+    transform: scale(1.1);
+}
+
+.adore>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.adore>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.adore>button:hover {
+    background-color: black;
+}
+
+
+.adore>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Opium {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Opium>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Opium-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Opium-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Opium>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Opium>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Opium>button:hover {
+    background-color: black;
+}
+
+
+.Opium>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.dronecamera {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.dronecamera>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.dronecamera-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.dronecamera-image>img:hover {
+    transform: scale(1.1);
+}
+
+.dronecamera>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.dronecamera>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.dronecamera>button:hover {
+    background-color: black;
+}
+
+.dronecamera>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.rgbmouse {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.rgbmouse>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.rgbmouse-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.rgbmouse-image>img:hover {
+    transform: scale(1.1);
+}
+
+.rgbmouse>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.rgbmouse>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.rgbmouse>button:hover {
+    background-color: black;
+}
+
+.rgbmouse>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.speaker {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.speaker>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.speaker-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.speaker-image>img:hover {
+    transform: scale(1.1);
+}
+
+.speaker>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.speaker>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.speaker>button:hover {
+    background-color: black;
+}
+
+
+.speaker>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.vrset {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.vrset>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.vrset-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.vrset-image>img:hover {
+    transform: scale(1.1);
+}
+
+.vrset>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.vrset>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.vrset>button:hover {
+    background-color: black;
+}
+
+
+.vrset>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+/* beauty page styling */
+
+
+
+
+.banner_beauty {
+    width: 100%;
+    height: 650px;
+    background-image: url(../beauty\ &\ Personal\ Care/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.beauty_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.beauty_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.beauty_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.beauty_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.beauty_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+#main_heading_beauty>.heading_beauty {
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.P_beauty {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 10%;
+
+}
+
+
+.beauty_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+
+.Deodorant {
+    width: 23%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Deodorant-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Deodorant-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Deodorant-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Deodorant>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Deodorant>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Deodorant>button:hover {
+    background-color: black;
+}
+
+.Deodorant>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.Eyeshadow {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Eyeshadow-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Eyeshadow-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Eyeshadow-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Eyeshadow>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Eyeshadow>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Eyeshadow>button:hover {
+    background-color: black;
+}
+
+.Eyeshadow>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.face {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.face-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.face-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.face-image>img:hover {
+    transform: scale(1.1);
+}
+
+.face>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.face>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.face>button:hover {
+    background-color: black;
+}
+
+.face>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Foundation {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Foundation-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Foundation-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Foundation-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Foundation>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Foundation>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Foundation>button:hover {
+    background-color: black;
+}
+
+.Foundation>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Hand {
+    margin-left: 10px;
+
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Hand-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Hand-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Hand-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Hand>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Hand>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Hand>button:hover {
+    background-color: black;
+}
+
+.Hand>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Lipstick {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Lipstick-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Lipstick-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Lipstick-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Lipstick>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Lipstick>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Lipstick>button:hover {
+    background-color: black;
+}
+
+.Lipstick>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.lotion {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.lotion-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.lotion-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.lotion-image>img:hover {
+    transform: scale(1.1);
+}
+
+.lotion>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.lotion>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.lotion>button:hover {
+    background-color: black;
+}
+
+.lotion>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Makeup {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Makeup>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Makeup-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Makeup-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Makeup>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Makeup>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Makeup>button:hover {
+    background-color: black;
+}
+
+
+.Makeup>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Mascara {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.Mascara>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Mascara-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Mascara-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Mascara>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Mascara>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Mascara>button:hover {
+    background-color: black;
+}
+
+.Mascara>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Polish {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Polish>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Polish-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Polish-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Polish>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Polish>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Polish>button:hover {
+    background-color: black;
+}
+
+.Polish>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.Razor {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Razor>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Razor-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Razor-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Razor>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Razor>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Razor>button:hover {
+    background-color: black;
+}
+
+
+.Razor>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Shampoo {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Shampoo>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Shampoo-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Shampoo-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Shampoo>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Shampoo>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Shampoo>button:hover {
+    background-color: black;
+}
+
+
+.Shampoo>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+/* Grocery page styling */
+
+
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: url(../Grocerry/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.Groceries_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.Groceries_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.Groceries_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.Groceries_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.Groceries_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+#main_heading_vegetable>.heading_vegetable {
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.P_vegetable {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 10%;
+
+}
+
+
+.vegetable_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+
+.Toamto {
+    width: 23%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Tomato-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Tomato-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Tomato-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Toamto>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Toamto>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Toamto>button:hover {
+    background-color: black;
+}
+
+.Toamto>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.carrot {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.carrot-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.carrot-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.carrot-image>img:hover {
+    transform: scale(1.1);
+}
+
+.carrot>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.carrot>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.carrot>button:hover {
+    background-color: black;
+}
+
+.carrot>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Potato {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Potato-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Potato-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Potato-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Potato>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Potato>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Potato>button:hover {
+    background-color: black;
+}
+
+.Potato>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Onion {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Onion-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Onion-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Onion-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Onion>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Onion>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Onion>button:hover {
+    background-color: black;
+}
+
+.Onion>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Broccoli {
+    margin-left: 10px;
+
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Broccoli-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Broccoli-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Broccoli-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Broccoli>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Broccoli>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Broccoli>button:hover {
+    background-color: black;
+}
+
+.Broccoli>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Cucumber {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Cucumber-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Cucumber-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Cucumber-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Cucumber>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Cucumber>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Cucumber>button:hover {
+    background-color: black;
+}
+
+.Cucumber>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.Capsicum {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Capsicum-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Capsicum-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Capsicum-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Capsicum>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Capsicum>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+
+.Capsicum>button:hover {
+    background-color: black;
+}
+
+.Capsicum>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Brinjal {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Brinjal>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Brinjal-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Brinjal-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Brinjal>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Brinjal>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Brinjal>button:hover {
+    background-color: black;
+}
+
+
+.Brinjal>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.corn {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.corn>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.corn-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.corn-image>img:hover {
+    transform: scale(1.1);
+}
+
+.corn>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.corn>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.corn>button:hover {
+    background-color: black;
+}
+
+.corn>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.green-chilli {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.green-chilli>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.green-chilli-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.green-chilli-image>img:hover {
+    transform: scale(1.1);
+}
+
+.green-chilli>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.green-chilli>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.green-chilli>button:hover {
+    background-color: black;
+}
+
+.green-chilli>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.Garlic {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Garlic>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Garlic-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Garlic-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Garlic>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Garlic>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Garlic>button:hover {
+    background-color: black;
+}
+
+
+.Garlic>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Spinach {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Spinach>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Spinach-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Spinach-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Spinach>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Spinach>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Spinach>button:hover {
+    background-color: black;
+}
+
+
+.Spinach>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+/* Fragrance page styling */
+
+
+
+.banner_fragrence {
+    width: 100%;
+    height: 650px;
+    background-image: url(../Fragrence/banner.webp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.fragrence_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.fragrence_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.fragrence_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.fragrence_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.fragrence_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+#main_heading_fragrence>.heading_fragrence {
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.P_fragrence {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 10%;
+
+}
+
+
+.fragrence_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+
+.Armani {
+    width: 23%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Armani-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Armani-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Armani-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Armani>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Armani>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Armani>button:hover {
+    background-color: black;
+}
+
+.Armani>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.Carolina {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Carolina-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Carolina-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Carolina-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Carolina>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Carolina>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Carolina>button:hover {
+    background-color: black;
+}
+
+.Carolina>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Chanel {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Chanel-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Chanel-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Chanel-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Chanel>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Chanel>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Chanel>button:hover {
+    background-color: black;
+}
+
+.Chanel>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.ChanelNo {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.ChanelNo-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ChanelNo-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.ChanelNo-image>img:hover {
+    transform: scale(1.1);
+}
+
+.ChanelNo>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.ChanelNo>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.ChanelNo>button:hover {
+    background-color: black;
+}
+
+.ChanelNo>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Creed {
+    margin-left: 10px;
+
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Creed-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Creed-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Creed-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Creed>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Creed>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Creed>button:hover {
+    background-color: black;
+}
+
+.Creed>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Sauvage {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Sauvage-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Sauvage-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Sauvage-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Sauvage>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Sauvage>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Sauvage>button:hover {
+    background-color: black;
+}
+
+.Sauvage>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.Gucci {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Gucci-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Gucci-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Gucci-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Gucci>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Gucci>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+
+.Gucci>button:hover {
+    background-color: black;
+}
+
+.Gucci>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.Peony {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Peony>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Peony-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Peony-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Peony>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Peony>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Peony>button:hover {
+    background-color: black;
+}
+
+
+.Peony>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Million {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.Million>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Million-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Million-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Million>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Million>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Million>button:hover {
+    background-color: black;
+}
+
+.Million>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.Cherry {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Cherry>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Cherry-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Cherry-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Cherry>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Cherry>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Cherry>button:hover {
+    background-color: black;
+}
+
+.Cherry>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.Ford {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.Ford>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Ford-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.Ford-image>img:hover {
+    transform: scale(1.1);
+}
+
+.Ford>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.Ford>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.Ford>button:hover {
+    background-color: black;
+}
+
+
+.Ford>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.YSL {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.YSL>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.YSL-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.YSL-image>img:hover {
+    transform: scale(1.1);
+}
+
+.YSL>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.YSL>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.YSL>button:hover {
+    background-color: black;
+}
+
+
+.YSL>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+/* Electronics page styling */
+
+
+
+.banner_electronics {
+    width: 100%;
+    height: 650px;
+    background-image: url(../Electronics/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.electronics_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.electronics_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.electronics_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.electronics_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.electronics_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+
+#main_heading_electronics>.heading_electronics {
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.P_electronics {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px 10%;
+
+}
+
+
+.elecronics_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+
+.adaptor {
+    width: 23%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.adaptor-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.adaptor-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.adaptor-image>img:hover {
+    transform: scale(1.1);
+}
+
+.adaptor>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.adaptor>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.adaptor>button:hover {
+    background-color: black;
+}
+
+.adaptor>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+.handle {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.handle-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.handle-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.handle-image>img:hover {
+    transform: scale(1.1);
+}
+
+.handle>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.handle>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.handle>button:hover {
+    background-color: black;
+}
+
+.handle>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.gaming_headphone {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.gaming_headphone-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.gaming_headphone-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.gaming_headphone-image>img:hover {
+    transform: scale(1.1);
+}
+
+.gaming_headphone>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.gaming_headphone>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.gaming_headphone>button:hover {
+    background-color: black;
+}
+
+.gaming_headphone>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.hair {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.hair-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.hair-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.hair-image>img:hover {
+    transform: scale(1.1);
+}
+
+.hair>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.hair>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.hair>button:hover {
+    background-color: black;
+}
+
+.hair>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.headphone {
+    margin-left: 10px;
+
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.headphone-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.headphone-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.headphone-image>img:hover {
+    transform: scale(1.1);
+}
+
+.headphone>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.headphone>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.headphone>button:hover {
+    background-color: black;
+}
+
+.headphone>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.lights {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.lights-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.lights-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.lights-image>img:hover {
+    transform: scale(1.1);
+}
+
+.lights>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.lights>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.lights>button:hover {
+    background-color: black;
+}
+
+.lights>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+.powerbank {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.powerbank-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.powerbank-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.powerbank-image>img:hover {
+    transform: scale(1.1);
+}
+
+.powerbank>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.powerbank>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+
+.powerbank>button:hover {
+    background-color: black;
+}
+
+.powerbank>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.projector {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.projector>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.projector-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.projector-image>img:hover {
+    transform: scale(1.1);
+}
+
+.projector>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.projector>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.projector>button:hover {
+    background-color: black;
+}
+
+
+.projector>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.ringlight {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.ringlight>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ringlight-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.ringlight-image>img:hover {
+    transform: scale(1.1);
+}
+
+.ringlight>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.ringlight>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.ringlight>button:hover {
+    background-color: black;
+}
+
+.ringlight>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+.speaker {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.speaker>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.speaker-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.speaker-image>img:hover {
+    transform: scale(1.1);
+}
+
+.speaker>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.speaker>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.speaker>button:hover {
+    background-color: black;
+}
+
+.speaker>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.watch {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.watch>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.watch-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.watch-image>img:hover {
+    transform: scale(1.1);
+}
+
+.watch>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.watch>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.watch>button:hover {
+    background-color: black;
+}
+
+
+.watch>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+
+
+.wireless_charger {
+    width: 23%;
+    border-radius: 20px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 1px -1px 6px;
+    overflow: hidden;
+}
+
+.wireless_charger>image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.wireless_charger-image>img {
+    cursor: pointer;
+    width: 100%;
+    height: 345px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.wireless_charger-image>img:hover {
+    transform: scale(1.1);
+}
+
+.wireless_charger>h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.wireless_charger>button {
+    background-color: #FF9F1C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s
+}
+
+.wireless_charger>button:hover {
+    background-color: black;
+}
+
+
+.wireless_charger>p {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+/* cart page */
+
+
+
+.cart {
+    width: 100%;
+    height: 650px;
+    background-image: url(../cart/banner.webp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.cart_h1 {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 48px;
+    color: #faa12c;
+}
+
+.cart_p {
+    font-size: 22px;
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: left;
+
+}
+
+.cart_Button {
+    margin: 15px 0px 0px 0px;
+    text-align: left;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.cart_Button>a>button {
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #faa12c;
+    color: white;
+    padding: 10px 20px;
+}
+
+.cart_Button>a>button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* ===== NEW CART STYLING - No Conflict With Old .cart ===== */
+.my-cart-wrapper {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#my-cart-items-box {
+  background: #ffffff;
+  border: 1px solid #f0e6d8;
+  border-radius: 20px;
+  padding: 25px 30px;
+  box-shadow: 0 15px 40px rgba(61, 47, 38, 0.06);
+  font-family: 'Poppins', sans-serif;
+}
+
+.my-cart-total-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #3d2f26;
+  text-align: right;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px dashed #e8ddd0;
+}
+
+#cart-total {
+  font-weight: 700;
+  color: #3d2f26;
+}
+
+.my-cart-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn-continue {
+  width: 320px;
+  padding: 13px;
+  border-radius: 12px;
+  border: 1px solid #e8ddd0;
+  background: transparent;
+  color: #7a6d63;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-checkout {
+  width: 320px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #3d2f26;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(61, 47, 38, 0.2);
+}
+
+.btn-continue:hover { background: #fdfaf6; }
+.btn-checkout:hover { background: #2b211b; }
+
+/* Cart Items (JS se banege) */
+.my-cart-item {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #fdf2e9;
+  align-items: center;
+}
+.my-cart-item img {
+  width: 85px; height: 85px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: #fdfaf6;
+}   
+
+
+
+
+
+/* footer styling */
+
+#Footer {
+    background-color: #111111;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_parent {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 30px;
+    padding: 60px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.colum_1-Logo h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFEF2;
+}
+
+.colum_1-Logo p {
+    margin: 15px 0 25px 0;
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 1.6;
+}
+
+.colum_2-Quick-links h3,
+.column-3_catgories h3,
+.column4_contact h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #FFFEF2;
+    position: relative;
+}
+
+.colum_2-Quick-links h3::after,
+.column-3_catgories h3::after,
+.column4_contact h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background: #faa12c;
+}
+
+.colum_2-Quick-links ul,
+.column-3_catgories ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+.colum_2-Quick-links ul li,
+.column-3_catgories ul li {
+    margin-bottom: 12px;
+}
+
+.colum_2-Quick-links ul li a,
+.column-3_catgories ul li a {
+    color: #a1a1a1 !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.colum_2-Quick-links ul li a:hover,
+.column-3_catgories ul li a:hover {
+    color: #faa12c !important;
+    padding-left: 5px;
+}
+
+.social_icon {
+    display: flex;
+    gap: 12px;
+}
+
+.social-link {
+    width: 38px;
+    height: 38px;
+    background: #222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.social-link:hover {
+    background: #faa12c;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+.phone,
+.email {
+    color: #a1a1a1;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.newsletter {
+    margin-top: 20px;
+    display: flex;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 12px 20px;
+    background: #faa12c;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter button:hover {
+    background: #ff8c00;
+}
+
+.footer_parent2 {
+    border-top: 1px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.copyright,
+.Payment {
+    background: transparent;
+    width: auto;
+    padding: 0;
+}
+
+.copyright p {
+    font-size: 13px;
+    color: #777;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.Payment span {
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #a1a1a1;
+}
+
+
+
+/* Footer End */
