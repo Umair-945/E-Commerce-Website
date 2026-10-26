@@ -1,0 +1,144 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UA Store | CHECKOUT PAGE</title>
+        <link rel="icon" href="assets/Tab logo/logo.webp">
+        <link rel="stylesheet" href="assets/style/style.css">
+        <link rel="stylesheet" href="assets/style/responsive.css">
+        <link rel="stylesheet" href="assets/Boot Strap Queries/bootstrap.min.css">
+    </head>
+
+    <body>
+        <header id="Header">
+        </header>
+
+
+        <aside id="aside">
+        </aside>
+
+        <main>
+
+
+
+            <div class="banner_beauty">
+                <h1 class="beauty_h1">Glow Naturally, Shine Confidently ✨</h1>
+
+                <p class="beauty_p">Discover authentic beauty & personal care products for your everyday radiance.</p>
+
+                <div class="beauty_Button">
+                    <a href="#main_heading_beauty"><button type="submit">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="main_heading_electronics">
+
+                <h1 class="heading_electronics">Checkout</h1>
+                <p class="P_electronics">Enter your details and we will email a confirmation after the order is placed.
+                </p>
+
+            </div>
+
+            <div class="checkout_main">
+
+                <div class="form">
+                    <form id="checkout-form">
+                        <label for="" class="mb-2">full name</label><br>
+                        <input type="text" required name="full name" id="full_name" class="form-control"><br>
+                        <label for="" class="mb-2">Email</label><br>
+                        <input type="text" required name="email" id="email" class="form-control"><br>
+                        <label for="" class="mb-2">Phone</label><br>
+                        <input type="text" required name="phone" id="phone" class="form-control"><br>
+                        <label for="" class="mb-2">Address</label><br>
+                        <textarea rows="5" type="text" required name="address" id="address"
+                            class="form-control"></textarea><br>
+
+
+                        <button type="submit" class="place_order" id="place_order_btn">Place Order Now</button>
+
+
+                    </form>
+                </div>
+                <div class="List">
+                    <h1>Order Summary</h1>
+                    <div id="checkout-items"></div>
+                    <hr>
+                    <h3>Total: <span id="checkout-total">Rs.0</span></h3>
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+        <footer id="Footer"></footer>
+
+
+
+        <script src="assets/functions/function.js"></script>
+        <script src="assets/Boot Strap Queries/bootstrap.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            emailjs.init("VSNqt-rtOsjC2ipIj");
+
+            document.getElementById('checkout-form').addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                let btn = document.getElementById('place_order_btn');
+                btn.innerText = "Placing...";
+                btn.disabled = true;
+
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+
+                let commonData = {
+                    full_name: document.getElementById('full_name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    phone: document.getElementById('phone').value.trim(),
+                    address: document.getElementById('address').value.trim(),
+                    order_id: 'UA' + Date.now().toString().slice(-6),
+                    cost_total: total,
+                    cost_shipping: 0,
+                    cost_tax: 0,
+                    orders: cart.map(i => ({ name: i.name, units: i.quantity, price: i.price * i.quantity, image_url: i.image }))
+                };
+
+                try {
+                    // 1. CUSTOMER KO - Thank You wali
+                    await emailjs.send('service_2n9fg5l', 'template_vqj5qt7', {
+                        ...commonData,
+                        to_email: commonData.email // customer ki email
+                    });
+
+                    // 2. OWNER KO - Same template se
+                    await emailjs.send('service_2n9fg5l', 'template_vqj5qt7', {
+                        ...commonData,
+                        to_email: "umairarshad8653@gmail.com,umairarshad8653@gmail.com" // owner ki email
+                    });
+
+                    alert(" ! Order Placed Done ✅ Thank You For Order");
+                    localStorage.removeItem('cart');
+                    window.location.href = "index.html";
+
+                } catch (err) {
+                    console.log(err);
+                    alert("Failed: " + JSON.stringify(err));
+                    btn.innerText = "Place Order Now";
+                    btn.disabled = false;
+                }
+            });
+        </script>
+        </script>
+
+    </body>
+
+    </html>

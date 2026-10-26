@@ -111,15 +111,15 @@ aside.innerHTML = `
 
 
 
-
-
 let humburger = document.querySelector(".menuicon");
 let close = document.getElementById("close_icon")
 
 
 humburger.addEventListener("click", function () {
     aside.style.width = "80%";
-    document.body.style.overflow = "hidden";
+    aside.style.transition = "1s";
+
+
 
 });
 
@@ -127,7 +127,6 @@ close.addEventListener("click", () => {
 
     aside.style.width = "0%";
 
-    window.location.reload();
 
 
 
@@ -184,7 +183,7 @@ allAddToCartButtons.forEach(button => {
             }
 
             updateCartCount();
-            
+
             let originalText = button.innerText;
             button.innerText = "Added ✓";
             button.style.backgroundColor = "#4CAF50";
@@ -252,5 +251,47 @@ function removeItem(index) {
 
 displayCartItems();
 
+
+
+// ===== CHECKOUT PAGE ORDER LIST =====
+function displayCheckoutSummary() {
+    let checkoutItemsBox = document.getElementById('checkout-items');
+    let checkoutTotal = document.getElementById('checkout-total');
+    
+    // Agar ye checkout page nahi hai to return
+    if (!checkoutItemsBox) return;
+
+    let cartData = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    if (cartData.length === 0) {
+        checkoutItemsBox.innerHTML = `<p style="padding:20px;">Your cart is empty</p>`;
+        checkoutTotal.innerText = "Rs.0";
+        return;
+    }
+
+    let total = 0;
+    let html = "";
+
+    cartData.forEach(item => {
+        total += item.price * item.quantity;
+        html += `
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:10px; border-bottom:1px solid #ddd4c4; text-align:left;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <img src="${item.image}" style="width:50px; height:50px; object-fit:cover; border-radius:8px;">
+                    <div>
+                        <p style="margin:0; font-weight:600;">${item.name}</p>
+                        <small>Qty: ${item.quantity}</small>
+                    </div>
+                </div>
+                <b>Rs.${item.price * item.quantity}</b>
+            </div>
+        `;
+    });
+
+    checkoutItemsBox.innerHTML = html;
+    checkoutTotal.innerText = `Rs.${total}`;
+}
+
+displayCheckoutSummary();
 
 

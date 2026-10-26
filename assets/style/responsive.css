@@ -1024,7 +1024,23 @@ aside{
 
 
 
-
+/* checkout page  */
+@media (max-width: 768px){
+    .beauty_h1{ font-size: 26px; }
+    .checkout_main{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    .checkout_main > .form,
+    .checkout_main > .List{
+        max-width: 100%;
+        width: 100%;
+    }
+    .checkout_main > .List{
+        position: static;
+    }
+}
 
 
 
